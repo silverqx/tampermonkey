@@ -1,17 +1,3 @@
-// ==UserScript==
-// @name         Nomi.ai
-// @namespace    https://beta.nomi.ai/
-// @version      0.4.0
-// @description  Nomi.ai keyboard shortcuts and UI enhancements
-// @author       Silver Zachara <silver.zachara@gmail.com>
-// @match        https://beta.nomi.ai/app
-// @match        https://beta.nomi.ai/nomis
-// @match        https://beta.nomi.ai/nomis/*
-// @match        https://beta.nomi.ai/profile/*
-// @icon         https://www.google.com/s2/favicons?domain=nomi.ai&sz=64
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict'
 

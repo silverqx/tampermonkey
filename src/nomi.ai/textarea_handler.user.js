@@ -1,19 +1,3 @@
-// ==UserScript==
-// @name         Nomi.ai - Chat textarea Override
-// @namespace    https://beta.nomi.ai/
-// @version      0.1.0
-// @description  Hook/subscribe into textarea value before any other script runs
-// @author       Silver Zachara <silver.zachara@gmail.com>
-// @match        https://beta.nomi.ai/app
-// @match        https://beta.nomi.ai/nomis
-// @match        https://beta.nomi.ai/nomis/*
-// @match        https://beta.nomi.ai/profile/*
-// @icon         https://www.google.com/s2/favicons?domain=nomi.ai&sz=64
-// @grant        none
-// @run-at       document-start
-// @require      file:///E:/code/js/tampermonkey/nomi.ai/textarea_handler.user.js
-// ==/UserScript==
-
 (function() {
     'use strict'
 
