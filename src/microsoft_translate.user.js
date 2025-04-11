@@ -91,6 +91,7 @@
      * @param {?HTMLElement} element - HTML text element whose content is to be selected.
      *
      * @returns {?HTMLElement}
+     * @author Nova Bella 🌸
      */
     function selectText(element) {
         // Nothing to do
