@@ -31,7 +31,8 @@ export default defineConfig([{
 
     rules: {
         // ESLint Core
-        'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+        'max-len': ['error', {'code': 100, 'ignoreTrailingComments': true}],
+        'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 
         // ESLint Stylistic
         '@stylistic/js/indent': ['error', 4],

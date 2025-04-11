@@ -88,7 +88,7 @@
     /**
      * The keydown event handler (fired when a key is pressed).
      *
-     * @param {KeyboardEvent} ev - KeyboardEvent objects describe a user interaction with the keyboard.
+     * @param {KeyboardEvent} ev - KeyboardEvent objects describe a user interaction with keyboard.
      */
     function keydownHandler(ev) {
         // Add padding-bottom below the main input box (padding-bottom for the chat column)
@@ -114,7 +114,8 @@
         else if (ev.code === 'KeyP' && ev.altKey)
             document.querySelector('a.et0q4zw1[href="/profile/settings"]')?.click()
 
-        // Nothing to do, all shortcuts below are skipped if the editable HTML element already has a focus
+        /* Nothing to do, all shortcuts below are skipped if the editable HTML element already
+           has a focus. */
         else if (isEditableFocused(ev))
             return
 
@@ -361,14 +362,16 @@
     /**
      * Initialize the global chat-related element variables.
      *
-     * @param {Nodelist} elements - HTML elements returned from the MutationObserver (to initialize globals).
+     * @param {Nodelist} elements - HTML elements returned from the MutationObserver
+     *                              (to initialize globals).
      */
     function initializeChatElements(elements) {
         // Nothing to do
         if (elements.length !== 2)
             return
 
-        // memoryBulbBtn = document.documentElement.clientWidth < MobileBreakpoint ? elements[1] : elements[0]
+        // memoryBulbBtn =
+        //     document.documentElement.clientWidth < MobileBreakpoint ? elements[1] : elements[0]
         memoryBulbBtn = elements[0]
         textarea      = elements[1]
         chatColumn    = document.querySelector('.ChatSidebarLayout_root__jmxzE > :last-child')
@@ -417,7 +420,8 @@
     /**
      * Initialize the global homepage-related element variables.
      *
-     * @param {Nodelist} elements - HTML elements returned from the MutationObserver (to initialize globals).
+     * @param {Nodelist} elements - HTML elements returned from the MutationObserver
+     *                              (to initialize globals).
      */
     function initializeHomeElements(elements) {
         // Nothing to do
@@ -492,7 +496,7 @@
     /**
      * Determine whether some editable HTML element currently has a focus.
      *
-     * @param {KeyboardEvent} ev - KeyboardEvent objects describe a user interaction with the keyboard.
+     * @param {KeyboardEvent} ev - KeyboardEvent objects describe a user interaction with keyboard.
      *
      * @returns {boolean}
      */

@@ -59,4 +59,4 @@
         console.log('Value changed to:', value)
         // Add your custom logic here
     }
-})();
+})()
